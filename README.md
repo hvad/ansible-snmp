@@ -1,4 +1,4 @@
-# ansible-centos
+# ansible-snmp
 
 
 - Requires Ansible 2.2 or newer
