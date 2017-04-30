@@ -1,4 +1,4 @@
-# ansible-fedora
+# ansible-centos
 
 
 - Requires Ansible 2.2 or newer
