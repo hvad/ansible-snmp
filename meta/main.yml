@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: David Hannequin
+  description: Ansible playbook to install SNMPv3 on CentOS.
+  license: GPLv3
+  min_ansible_version: 2.2
+  platforms:
+  - name: Centos
+    versions:
+    - 7
+  galaxy_tags:
+    - snmpv3
+    - centos

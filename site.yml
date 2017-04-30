@@ -1,0 +1,9 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: SNMP 
+  hosts: centos
+  remote_user: root
+
+  roles:
+    - snmp

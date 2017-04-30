@@ -1,0 +1,17 @@
+---
+# This playbook contains common plays that will be run on my computer.
+
+- name: Install SNMP RPMs
+  yum: name={{ item }} state=present
+  with_items:
+    - net-snmp
+    - net-snmp-utils
+
+- name: Stop SNMP
+  service: name=snmpd state=stopped
+
+- name: Configure SNMP Authentification
+  shell: net-snmp-create-v3-user -ro -a '{{ snmp_password }}' -x '{{ snmp_privpass }}' -X AES {{ snmp_user }}
+
+- name: Start SNMP
+  service: name=snmpd state=started

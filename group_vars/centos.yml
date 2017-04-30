@@ -1,0 +1,4 @@
+---
+snmp_user: snmp_user
+snmp_password: snmp_pass
+snmp_privpass: snmp_priv
